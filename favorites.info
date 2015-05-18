@@ -1,0 +1,5 @@
+name = Favorites
+description = Display Favorite Items.
+package = Custom Modules
+core = 7.x
+files[] = favorites.module

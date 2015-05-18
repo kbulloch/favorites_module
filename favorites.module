@@ -1,0 +1,52 @@
+<?php
+    function favorites_menu() {
+        $items = array();
+        $items['movie_list'] = array(
+            'title' => 'Favorite Movies',
+            'page callback' => 'fav_movies',
+            'access callback' => TRUE,
+            'type' => MENU_NORMAL_ITEM,
+        );
+
+        $items['book_list'] = array(
+            'title' => 'Favorite Books',
+            'page callback' => 'fav_books',
+            'access callback' => TRUE,
+            'type' => MENU_NORMAL_ITEM,
+        );
+
+        $items['song_list'] = array(
+            'title' => 'Favorite Songs',
+            'page callback' => 'fav_songs',
+            'access callback' => TRUE,
+            'type' => MENU_NORMAL_ITEM,
+        );
+
+
+    }
+
+
+
+    function fav_movies() {
+        return '<ul>
+                    <li>Mad Max</li>
+                    <li>Road Warrior</li>
+                    <li>Mad Max: Beyond Thunderdome</li>
+                </ul>';
+    }
+
+    function fav_books() {
+        return '<ul>
+                    <li>The Road</li>
+                    <li>Gunslinger</li>
+                    <li>Snowbound</li>
+                </ul>';
+    }
+
+    function fav_songs() {
+        return '<ul>
+                    <li>Elder Lycanthropy</li>
+                    <li>Slaughter of the Soul</li>
+                    <li>Blue</li>
+                </ul>';
+    }
